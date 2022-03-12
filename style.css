@@ -1,0 +1,87 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.app-wrapper {
+    height: 100vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.time-select {
+    height: 80%;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.player-container {
+    position: relative;
+    height: 80%;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.player-container svg {
+    position: absolute;
+    height: 50%;
+    top: 50%;
+    left: 50%;
+    pointer-events: none;
+}
+.player-container img {
+    filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(1501%) hue-rotate(180deg) brightness(104%) contrast(110%);
+}
+.time-display{
+    position: absolute;
+    bottom: 10%;
+    color: #a09c9c;
+    font-size: 50px;
+}
+.sound-picker {
+    height: 80%;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+video{
+   position: fixed;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   z-index: -10;
+}
+
+.time-select button,
+.sound-picker button{
+    color: #ffffff;
+    width: 30%;
+    height: 10%;
+    background: #00000054;
+    border: 2px solid #e7e2e2;
+    border-radius: 7px;
+    cursor: pointer;
+    font-size: 20px;
+    transition: all 0.5s ease;
+}
+.time-select button:hover{
+    color: #141414;
+    background: #ffffff5b;
+}
+.sound-picker button{
+    background: #ffffff5b;
+    border: 2px solid #141414;
+    height: 100px;
+    width: 100px;
+}
+.sound-picker button:hover{
+    background: #00000054;
+    filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(1501%) hue-rotate(180deg) brightness(104%) contrast(110%);
+}
